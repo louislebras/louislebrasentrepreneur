@@ -23,17 +23,21 @@ header {
   .mark-louislebras {
     margin-top: 1vh;
     width: 110px;
+    height: auto;
     animation: 5s linear infinite rotateMark;
     position: relative;
+    z-index: 999;
+    overflow: hidden;
+    
   }
 
   @keyframes rotateMark {
     0% {
-      -webkit-transform: rotate3d(0, 1, 0, 60deg);
+      transform: rotateY(60deg);
     }
 
     100% {
-      -webkit-transform: rotate3d(0, -1, 0, 420deg);
+      transform: rotateY(420.00001deg);
     }
   }
 }
