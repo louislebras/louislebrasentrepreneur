@@ -5,6 +5,7 @@ header {
   align-items: center;
   justify-content: center;
   padding-top: 18vh;
+
   p {
     width: 63%;
     text-transform: uppercase !important;
@@ -20,24 +21,24 @@ header {
     padding-top: 3vh !important;
   }
 
+  .mark-wrapper {
+    // HACK: Fixing elements intersection rendering issues w/ rotate.
+    transform: translateZ(0);
+  }
+
   .mark-louislebras {
     margin-top: 1vh;
     width: 110px;
-    height: auto;
     animation: 5s linear infinite rotateMark;
-    position: relative;
-    z-index: 999;
-    overflow: hidden;
-    
   }
 
   @keyframes rotateMark {
     0% {
-      transform: rotateY(60deg);
+      transform: rotateY(60deg) translateZ(0);
     }
 
     100% {
-      transform: rotateY(420.00001deg);
+      transform: rotateY(420.00001deg) translateZ(0);
     }
   }
 }
