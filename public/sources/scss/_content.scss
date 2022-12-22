@@ -1,0 +1,47 @@
+@import "./variables";
+
+.content {
+  width: 45%;
+  margin-top: 12vh;
+  margin-bottom: 20vh;
+
+  img {
+    width: 100%;
+  }
+
+  .letter {
+    width: 100%;
+    background-color: $second-background;
+    border-radius: 8px;
+    margin-top: 40px;
+    // padding-top: 6.5vh;
+    position: relative;
+    font-family: "Inter";
+
+    p {
+      width: 63%;
+      padding-top: 6vh;
+      padding-bottom: 10vh;
+      margin-left: 19%;
+      position: relative;
+      //   letter-spacing: -0.01em;
+      line-height: 150%;
+      color: $second-type-color;
+
+      .bold {
+        font-weight: 600;
+      }
+
+      .underlined {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .head-letter {
+    position: absolute;
+    left: -11%;
+    width: 100%;
+    // top: 6.5vh;
+  }
+}

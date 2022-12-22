@@ -1,0 +1,39 @@
+@import "../scss/variables";
+
+h1 {
+  font-size: calc(
+    140px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 120
+  );
+  letter-spacing: -0.025em;
+  line-height: 100%;
+  text-align: center;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: calc(
+    24px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  color: $type-color;
+}
+
+p {
+  font-size: calc(
+    18px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+}
+
+@media (max-width: 800px) {
+  .br {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Stamina";
+  src: url("../../content/fonts/spatium.woff2") format("woff2"),
+    url("../../content/fonts/spatium.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Stamina";
+  src: url("../../content/fonts/spatium-bold.woff2") format("woff2"),
+    url("../../content/fonts/spatium-bold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");

@@ -1,0 +1,31 @@
+@import "./variables";
+
+.second-header {
+  position: fixed;
+  top: 10px;
+  width: 55%;
+  margin-left: 0%;
+  text-align: center;
+  //   display: none;
+  opacity: 0;
+  transition: 0.5s ease;
+  z-index: 999999;
+  mix-blend-mode: difference !important;
+  p {
+    font-size: calc(
+      15px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    );
+  }
+
+  h2 {
+    text-transform: uppercase;
+    line-height: 100%;
+
+    color: $difference;
+  }
+}
+
+.darkHeader {
+  opacity: 1;
+  transition: 0.5s ease;
+}

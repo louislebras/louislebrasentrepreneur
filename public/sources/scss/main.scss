@@ -1,0 +1,27 @@
+@import "./variables", "./fonts", "./typography", "./header", "./nav",
+  "./secondheader", "./content";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: $background;
+  font-family: "Stamina";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

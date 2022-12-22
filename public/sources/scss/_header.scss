@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18vh;
+  p {
+    width: 63%;
+    text-transform: uppercase !important;
+    font-weight: 600;
+    text-align: center;
+    font-size: calc(
+      17px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    );
+    letter-spacing: 0.045em;
+  }
+
+  h1 {
+    padding-top: 3vh !important;
+  }
+
+  .mark-louislebras {
+    margin-top: 1vh;
+    width: 110px;
+    animation: 5s linear infinite rotateMark;
+    position: relative;
+  }
+
+  @keyframes rotateMark {
+    0% {
+      -webkit-transform: rotate3d(0, 1, 0, 60deg);
+    }
+
+    100% {
+      -webkit-transform: rotate3d(0, -1, 0, 420deg);
+    }
+  }
+}
